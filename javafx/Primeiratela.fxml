@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="primeiratela">
+   <children>
+      <ImageView fitHeight="407.0" fitWidth="685.0" layoutX="-85.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Downloads/coleta-de-lixo-reciclagem-de-lixo-e-transporte-na-cidade_313242-973.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="233.0" layoutY="367.0">
+         <font>
+            <Font name="Lato Black" size="20.0" />
+         </font>
+      </Label>
+      <MenuBar id="menubar" fx:id="menubar" layoutX="216.0" layoutY="6.0" prefHeight="27.0" prefWidth="375.0" style="-fx-background-color: #008b76;">
+        <menus>
+          <Menu fx:id="menuInicio" mnemonicParsing="false" text="Início" />
+          <Menu mnemonicParsing="false" style="-fx-color: white;" text="Dias de coleta" />
+          <Menu mnemonicParsing="false" text="Quem somos" />
+            <Menu mnemonicParsing="false" text="Apoie-nos" />
+        </menus>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </MenuBar>
+      <Label layoutX="19.0" layoutY="10.0" text="Recicle aqui !" textFill="#008b76">
+         <font>
+            <Font name="Lato Black" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="268.0" layoutY="73.0" prefHeight="49.0" prefWidth="314.0" text="Bem-vindo ao nosso programa !">
+         <font>
+            <Font name="Lato Black" size="21.0" />
+         </font>
+      </Label>
+      <Label layoutX="197.0" layoutY="105.0" prefHeight="49.0" prefWidth="375.0" text="asdasdasasjfbkjashfjkahrjkegajksgdfkgwer">
+         <font>
+            <Font name="Lato Light" size="21.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

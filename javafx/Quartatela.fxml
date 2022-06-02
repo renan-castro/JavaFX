@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quartatela">
+   <children>
+      <Label layoutX="89.0" layoutY="58.0" text="Quem somos" textFill="#008b76">
+         <font>
+            <Font name="Lato Black" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="89.0" layoutY="94.0" prefHeight="230.0" prefWidth="439.0" text="Somos uma equipe de serviço totalmente disponível ao cidadão e estamos trabalhando para resolver as questões que afetam o meio ambiente, e uma das soluções é a coleta reciclável. Com nosso nosso trabalho estamos trazendo uma forma de como começar a deixar um mundo mais limpo." textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Noto Sans Bengali UI Regular" size="18.0" />
+         </font>
+      </Label>
+      <Button id="btnVoltar3" fx:id="btnVoltar3" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#acaoVoltar3" style="-fx-background-color: white;" text="Voltar">
+         <font>
+            <Font name="Noto Sans Black" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>

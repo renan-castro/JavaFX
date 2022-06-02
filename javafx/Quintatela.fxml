@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quintatela">
+   <children>
+      <Label layoutX="109.0" layoutY="42.0" text="QUER SER UM APOIADOR ?">
+         <font>
+            <Font name="Noto Sans Black" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="109.0" layoutY="64.0" text="Cadastre-se">
+         <font>
+            <Font name="Noto Sans Black" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="50.0" layoutY="64.0">
+         <font>
+            <Font name="Noto Sans Black" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="218.0" layoutY="64.0" text="aqui" textFill="#1e831a">
+         <font>
+            <Font name="Noto Sans Black" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="88.0" layoutY="165.0" text="Nome de Usuário:">
+         <font>
+            <Font name="Noto Sans Black" size="17.0" />
+         </font>
+      </Label>
+      <Label layoutX="185.0" layoutY="196.0" text="Senha:">
+         <font>
+            <Font name="Noto Sans Black" size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="textInput" layoutX="248.0" layoutY="165.0" promptText="Nome de usuário" />
+      <PasswordField fx:id="passInput" layoutX="248.0" layoutY="196.0" promptText="Senha" />
+      <Button id="btnCadastro" fx:id="btnCadastro" layoutX="285.0" layoutY="223.0" mnemonicParsing="false" onAction="#acaoCadastrar" style="-fx-background-color: white;" text="Cadastrar" textFill="#1e831a">
+         <font>
+            <Font name="Noto Sans Black" size="15.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Button id="btnVoltar4" fx:id="btnVoltar4" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#acaoVoltar4" style="-fx-background-color: white;" text="Voltar">
+         <font>
+            <Font name="Noto Sans Black" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+</AnchorPane>
