@@ -4,7 +4,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 
-public class quintatela {
+public class Quintatela {
 
     @FXML
     private Button btnCadastro;

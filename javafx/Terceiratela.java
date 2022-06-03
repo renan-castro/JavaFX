@@ -3,7 +3,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 
-public class terceiratela {
+public class Terceiratela {
 
     @FXML
     private Button btnVoltar2;
