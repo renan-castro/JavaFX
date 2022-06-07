@@ -8,25 +8,19 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="quintatela">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Visual.Apoiador">
    <children>
       <Label layoutX="109.0" layoutY="42.0" text="QUER SER UM APOIADOR ?">
          <font>
             <Font name="Noto Sans Black" size="17.0" />
          </font>
       </Label>
-      <Label layoutX="109.0" layoutY="64.0" text="Cadastre-se">
+      <Label layoutX="109.0" layoutY="64.0" text="Cadastre-se aqui">
          <font>
             <Font name="Noto Sans Black" size="17.0" />
          </font>
       </Label>
       <Label layoutX="50.0" layoutY="64.0">
-         <font>
-            <Font name="Noto Sans Black" size="17.0" />
-         </font>
-      </Label>
-      <Label layoutX="218.0" layoutY="64.0" text="aqui" textFill="#1e831a">
          <font>
             <Font name="Noto Sans Black" size="17.0" />
          </font>
