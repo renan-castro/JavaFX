@@ -1,5 +1,7 @@
 package Visual;
 import java.io.IOException;
+import java.util.ArrayList;
+
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
@@ -10,6 +12,7 @@ import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
+import javafx.scene.control.ChoiceBox;
 
 public class Apoiador {
     
@@ -30,8 +33,25 @@ public class Apoiador {
     private TextField textInput;
 
     @FXML
-    void acaoCadastrar(ActionEvent event) {
+    private ChoiceBox<String> choice; 
 
+    @FXML
+    void acaoCadastrar(ActionEvent event) {
+    
+    private ArrayList<String> gs = new ArrayList<String>();
+    
+    String nome = textInput.getText();
+    String senha = passInput.getText();
+    
+    gs.add(nome);
+    gs.add(senha);
+    textInput.setText("");
+    passInput.setText("");
+
+        int duda = gs.size();
+        System.out.println(duda);
+
+        choice.getItems().addAll(gs);
     }
 
     @FXML
@@ -44,3 +64,4 @@ public class Apoiador {
     }
 
 }
+
