@@ -52,6 +52,23 @@ public class Apoiador {
         System.out.println(duda);
 
         choice.getItems().addAll(gs);
+        choice.setOnAction(this::setcuplice);
+    }
+
+        public void setcuplice(ActionEvent event){
+            name.setText(choice.getValue());
+        }
+
+    @FXML
+     void senha (ActionEvent event){
+
+     }
+
+    @FXML
+     void textword(ActionEvent event){
+
+     }
+
     }
 
     @FXML
