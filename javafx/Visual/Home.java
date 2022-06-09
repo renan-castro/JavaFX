@@ -30,7 +30,12 @@ public class Home {
     }
 
     @FXML
-    void btnColeta(ActionEvent event) {
+    void btnColeta(ActionEvent event) throws IOExpception {
+        root = FXMLLoader.load(getClass().getResource("diasDeColeta.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
 
     }
 
