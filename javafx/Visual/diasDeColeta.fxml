@@ -8,39 +8,21 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #32ae7e;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="terceiratela">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="terceiratela">
    <children>
       <Label layoutX="81.0" layoutY="55.0" text="Dias de coleta">
          <font>
             <Font name="Noto Sans Black" size="20.0" />
          </font>
       </Label>
-      <TableView id="tabela" fx:id="tabela" layoutX="75.0" layoutY="114.0" prefHeight="172.0" prefWidth="450.0">
+      <TableView id="tabela" fx:id="tabela" layoutX="81.0" layoutY="120.0" prefHeight="200.0" prefWidth="451.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Segunda">
-               <columns>
-                  <TableColumn prefWidth="75.0" text="" />
-               </columns></TableColumn>
-          <TableColumn prefWidth="75.0" text="Terça">
-               <columns>
-                  <TableColumn prefWidth="75.0" text="6:20" />
-               </columns></TableColumn>
-            <TableColumn fx:id="tabela" prefWidth="75.0" text="Quarta">
-               <columns>
-                  <TableColumn prefWidth="75.0" text="" />
-               </columns></TableColumn>
-            <TableColumn prefWidth="75.0" text="Quinta">
-               <columns>
-                  <TableColumn prefWidth="75.0" text="6:20" />
-               </columns></TableColumn>
-            <TableColumn prefWidth="75.0" text="Sexta">
-               <columns>
-                  <TableColumn prefWidth="75.0" text="" />
-               </columns></TableColumn>
-            <TableColumn prefWidth="75.0" text="Sábado">
-               <columns>
-                  <TableColumn prefWidth="75.0" text="6:20" />
-               </columns></TableColumn>
+          <TableColumn prefWidth="75.0" text="Segunda" />
+          <TableColumn prefWidth="75.0" text="Terça" />
+            <TableColumn fx:id="tabela" prefWidth="75.0" text="Quarta" />
+            <TableColumn prefWidth="75.0" text="Quinta" />
+            <TableColumn prefWidth="75.0" text="Sexta" />
+            <TableColumn prefWidth="75.0" text="Sábado" />
         </columns>
       </TableView>
       <Button id="btnVoltar2" fx:id="btnVoltar2" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#acaoVoltar2" style="-fx-background-color: white;" text="Voltar">
@@ -53,4 +35,3 @@
       </Button>
    </children>
 </AnchorPane>
-

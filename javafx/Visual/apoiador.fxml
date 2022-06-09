@@ -2,13 +2,14 @@
 
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Visual.Apoiador">
+<AnchorPane id="painelApoiador" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Visual.Apoiador">
    <children>
       <Label layoutX="109.0" layoutY="42.0" text="QUER SER UM APOIADOR ?">
          <font>
@@ -37,7 +38,7 @@
       </Label>
       <TextField fx:id="textInput" layoutX="248.0" layoutY="165.0" promptText="Nome de usuário" />
       <PasswordField fx:id="passInput" layoutX="248.0" layoutY="196.0" promptText="Senha" />
-      <Button id="btnCadastro" fx:id="btnCadastro" layoutX="285.0" layoutY="223.0" mnemonicParsing="false" onAction="#acaoCadastrar" style="-fx-background-color: white;" text="Cadastrar" textFill="#1e831a">
+      <Button id="btnCadastro" fx:id="btnCadastro" layoutX="285.0" layoutY="228.0" mnemonicParsing="false" onAction="#acaoCadastrar" style="-fx-background-color: white;" text="Cadastrar" textFill="#1e831a">
          <font>
             <Font name="Noto Sans Black" size="15.0" />
          </font>
@@ -45,7 +46,7 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
-      <Button id="btnVoltar4" fx:id="btnVoltar4" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#acaoVoltar4" style="-fx-background-color: white;" text="Voltar">
+      <Button id="btnVoltar4" fx:id="btnVoltar4" layoutX="10.0" layoutY="11.0" mnemonicParsing="false" onAction="#acaoVoltar4" style="-fx-background-color: white;" stylesheets="@style.css" text="Voltar">
          <font>
             <Font name="Noto Sans Black" size="13.0" />
          </font>
@@ -53,5 +54,6 @@
             <Cursor fx:constant="HAND" />
          </cursor>
       </Button>
+      <ChoiceBox id="caixaAbrir" fx:id="choice" layoutX="428.0" layoutY="14.0" prefWidth="150.0" stylesheets="@style.css" />
    </children>
 </AnchorPane>
