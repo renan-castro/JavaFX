@@ -19,7 +19,7 @@
         <columns>
           <TableColumn prefWidth="75.0" text="Segunda">
                <columns>
-                  <TableColumn prefWidth="75.0" text="x" />
+                  <TableColumn prefWidth="75.0" text="" />
                </columns></TableColumn>
           <TableColumn prefWidth="75.0" text="Terça">
                <columns>
@@ -27,7 +27,7 @@
                </columns></TableColumn>
             <TableColumn fx:id="tabela" prefWidth="75.0" text="Quarta">
                <columns>
-                  <TableColumn prefWidth="75.0" text="x" />
+                  <TableColumn prefWidth="75.0" text="" />
                </columns></TableColumn>
             <TableColumn prefWidth="75.0" text="Quinta">
                <columns>
@@ -35,7 +35,7 @@
                </columns></TableColumn>
             <TableColumn prefWidth="75.0" text="Sexta">
                <columns>
-                  <TableColumn prefWidth="75.0" text="x" />
+                  <TableColumn prefWidth="75.0" text="" />
                </columns></TableColumn>
             <TableColumn prefWidth="75.0" text="Sábado">
                <columns>
