@@ -51,5 +51,10 @@ public class Home {
         stage.setScene(scene);
         stage.show();
     }
+     @Override
+    public void initialize(URL arg0, ResourceBundle arg1) {
+        fundo.setImage(new Image("Visual/imagens/fundo.png"));
+        
+    }
 
 }
