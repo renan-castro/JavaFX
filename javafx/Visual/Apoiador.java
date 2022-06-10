@@ -1,6 +1,5 @@
 package Visual;
 import java.io.IOException;
-import java.util.ArrayList;
 
 import Controle.cadastroUsuario;
 import Model.Usuario;
@@ -32,6 +31,9 @@ public class Apoiador {
     private Button btnVoltar4;
 
     @FXML
+    private PasswordField confirmpassInput;
+
+    @FXML
     private PasswordField passInput;
 
     @FXML
@@ -42,40 +44,34 @@ public class Apoiador {
 
     @FXML
     void acaoCadastrar(ActionEvent event) {
-    choice.getItems().clear();
-    ArrayList<Usuario> gs = controle.getLista();   
-    Usuario user = new Usuario();
+    if(passInput.getText().equals("") || confirmpassInput.getText().equals("")){
+        Alert alerta = new Alert(AlertType.ERROR);
+        alerta.setContentText("As senhas não podem ficar em branco.");
+        alerta.show();
+    }else if(!passInput.getText().equals(confirmpassInput.getText())){
+        Alert alerta = new Alert(AlertType.ERROR);
+        alerta.setContentText("As senhas estão diferentes.");
+        alerta.show();
+    }else if(textInput.getText().equals("")){
+        Alert alerta = new Alert(AlertType.ERROR);
+        alerta.setContentText("O campo de usuário não foi preenchido.");
+        alerta.show();
+    }else{
+        Usuario user = new Usuario();
+        user.setNome(textInput.getText());
+        user.setSenha(textInput.getText());
     if(controle.addUser(user)){
         Alert alerta = new Alert(AlertType.INFORMATION);
-        alerta.setContentText(("Usuário cadastrado com sucesso."));
+        alerta.setContentText("O usuário foi cadastrado com sucesso.");
         alerta.show();
-    }else if(user.equals(user)){
-        Alert alerta = new Alert(AlertType.WARNING);
-        alerta.setContentText("Usuário já cadastrado.");
+        choice.getItems().addAll(controle.nomes());
+    }else{
+        Alert alerta = new Alert(AlertType.ERROR);
+        alerta.setContentText("Usuário já foi cadastrado.");
         alerta.show();
-    }
-
-    user.setNome(textInput.getText());
-    gs.add(user);
-    textInput.setText("");
-    passInput.setText("");
-    String[] nomes = new String[controle.getLista().size()];
-    for(int i = 0; i < gs.size(); i++){
-        nomes[i] = gs.get(i).getNome();
-    }
-
-        int duda = gs.size();
-        System.out.println(duda);
-
-        choice.getItems().addAll(nomes);
-        choice.setOnAction(this::informacoes);
-        
-        
-    }
-
-        public void informacoes(ActionEvent event){
-            textInput.setText(choice.getValue());
+            }
         }
+    }
 
     @FXML
      void senha (ActionEvent event){
