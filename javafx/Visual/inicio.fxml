@@ -60,7 +60,7 @@
       </Label>
       <Label layoutX="349.0" layoutY="311.0" prefHeight="0.0" prefWidth="294.0" text="Não reciclável" textFill="#5b5957" wrapText="true">
          <font>
-            <Font name="Noto Sans Black" size="17.0" />
+            <Font name="Lato black" size="17.0" />
          </font>
       </Label>
    </children>
