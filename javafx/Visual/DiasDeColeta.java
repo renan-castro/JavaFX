@@ -54,4 +54,12 @@ public class DiasDeColeta implements Initializable{
         quarta.setCellValueFactory(new PropertyValueFactory<>("email"));
         tabela.setItems(listaDeExemplo());
     }
+    private ObservableList<Horario> listaDeExemplo(){
+        return FXCollections.observableArrayList(
+            new Horario(15,"Rebeca","rebeca@gmail.com"),
+            new Horario(17,"Raíssa","raissa@taficandovea.com"),
+            new Horario(16,"Toin","toin@gmail.com"),
+            new Horario(33,"Clemilton","themonio@gmail.com")
+        );
+    }
 }
