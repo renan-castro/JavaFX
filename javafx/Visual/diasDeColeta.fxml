@@ -17,11 +17,11 @@
       </Label>
       <TableView id="tabela" fx:id="tabela" layoutX="81.0" layoutY="120.0" prefHeight="200.0" prefWidth="451.0">
         <columns>
-          <TableColumn prefWidth="75.0" text="Segunda" />
-          <TableColumn prefWidth="75.0" text="Terça" />
-            <TableColumn fx:id="tabela" prefWidth="75.0" text="Quarta" />
-            <TableColumn prefWidth="75.0" text="Quinta" />
-            <TableColumn prefWidth="75.0" text="Sexta" />
+          <TableColumn prefWidth="75.0" text="Segunda-feira" />
+          <TableColumn prefWidth="75.0" text="Terça-feira" />
+            <TableColumn fx:id="tabela" prefWidth="75.0" text="Quarta-feira" />
+            <TableColumn prefWidth="75.0" text="Quinta-feira" />
+            <TableColumn prefWidth="75.0" text="Sexta-feira" />
             <TableColumn prefWidth="75.0" text="Sábado" />
         </columns>
       </TableView>
