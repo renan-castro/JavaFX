@@ -45,7 +45,7 @@ public class Home {
 
     @FXML
     void btnQuem(ActionEvent event) throws IOException{
-        root = FXMLLoader.load(getClass().getResource("quemsomos.fxml"));
+        root = FXMLLoader.load(getClass().getResource("quemSomos.fxml"));
         stage = (Stage)((Node)event.getSource()).getScene().getWindow();
         scene = new Scene(root);
         stage.setScene(scene);
