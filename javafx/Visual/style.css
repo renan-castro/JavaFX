@@ -22,3 +22,18 @@
     -fx-background-radius: 10;
 }
 
+#painelApoiador{
+    -fx-background-color: #40b988;
+}
+
+#btnVoltar4{
+    -fx-background-radius: 10;
+}
+
+#caixaAbrir{
+    -fx-background-radius: 10;
+}
+
+#btnCadastro{
+    -fx-background-radius: 10;
+}
