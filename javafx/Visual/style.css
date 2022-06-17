@@ -9,13 +9,18 @@
     -fx-background-color: #40b988;
 }
 
+#painelColeta{
+    -fx-background-color: #40b988;
+}
+
+#tabelaDias{
+    -fx-background-radius: 10;
+}
+
 #btnVoltar3{
     -fx-background-radius: 10;
 }
 
-#painelColeta{
-    -fx-background-color: #40b988;
-}
 
 #btnVoltar2{
     -fx-background-radius: 10;
@@ -42,5 +47,8 @@
 }
 
 #btnCadastro{
+    -fx-background-radius: 10;
+}
+#btnVoltar2{
     -fx-background-radius: 10;
 }
