@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #4dc493;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Visual.diasColeta">
+   <children>
+      <TableView id="tabelaDias" fx:id="tabela" layoutX="74.0" layoutY="108.0" prefHeight="200.0" prefWidth="452.0" stylesheets="@style.css">
+        <columns>
+          <TableColumn id="tabelaColunas" fx:id="segunda" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="Segunda" />
+          <TableColumn id="tabelaColunas" fx:id="terca" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="Terça" />
+            <TableColumn id="tabelaColunas" fx:id="quarta" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="Quarta" />
+            <TableColumn id="tabelaColunas" fx:id="quinta" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="Quinta" />
+            <TableColumn id="tabelaColunas" fx:id="sexta" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="Sexta" />
+            <TableColumn id="tabelaColunas" fx:id="sabado" editable="false" prefWidth="75.0" resizable="false" sortable="false" text="Sábado" />
+        </columns>
+      </TableView>
+      <Button id="btnVoltar2" fx:id="btnVoltar2" layoutX="24.0" layoutY="24.0" mnemonicParsing="false" onAction="#acaoVoltar2" style="-fx-background-color: white;" stylesheets="@style.css" text="Voltar">
+         <font>
+            <Font name="Noto Sans Black" size="13.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Text layoutX="75.0" layoutY="92.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dias de coleta">
+         <font>
+            <Font size="21.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
