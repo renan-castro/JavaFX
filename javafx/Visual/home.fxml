@@ -9,7 +9,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Visual.Home">
+<AnchorPane id="painelHome" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Visual.Home">
    <children>
       <ImageView fitHeight="406.0" fitWidth="600.0" layoutY="-3.0" pickOnBounds="true">
          <image>
@@ -36,14 +36,14 @@
             <Font name="Lato Black" size="21.0" />
          </font>
       </Label>
-      <Label layoutX="212.0" layoutY="313.0" prefHeight="73.0" prefWidth="375.0" text="Aqui você pode saber os dias de coleta, e ser um amigo do meio ambiente." textFill="#034338" wrapText="true">
+      <Label layoutX="84.0" layoutY="309.0" prefHeight="73.0" prefWidth="375.0" text="Aqui você pode saber os dias de coleta, e ser um amigo do meio ambiente." textFill="#034338" wrapText="true">
          <font>
             <Font name="Lato Regular" size="21.0" />
          </font>
       </Label>
       <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="5.0" layoutY="7.0" pickOnBounds="true" preserveRatio="true">
          <image>
-            <Image url="@../../../Downloads/442c63f93bb9986778da8f8dbb821d89.png" />
+            <Image url="@imagens/icone%20programa.png" />
          </image>
       </ImageView>
       <Label layoutX="35.0" layoutY="147.0">

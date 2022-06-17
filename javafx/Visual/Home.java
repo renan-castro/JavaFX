@@ -30,8 +30,12 @@ public class Home {
     }
 
     @FXML
-    void btnColeta(ActionEvent event) {
-
+    void btnColeta(ActionEvent event) throws IOException{
+        root = FXMLLoader.load(getClass().getResource("diasColeta.fxml"));
+        stage = (Stage)((Node)event.getSource()).getScene().getWindow();
+        scene = new Scene(root);
+        stage.setScene(scene);
+        stage.show();
     }
 
     @FXML
@@ -50,11 +54,6 @@ public class Home {
         scene = new Scene(root);
         stage.setScene(scene);
         stage.show();
-    }
-     @Override
-    public void initialize(URL arg0, ResourceBundle arg1) {
-        fundo.setImage(new Image("Visual/imagens/fundo.png"));
-        
     }
 
 }
