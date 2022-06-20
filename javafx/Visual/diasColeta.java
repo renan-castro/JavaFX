@@ -72,11 +72,11 @@ public class diasColeta implements Initializable{
     }
     private ObservableList<Horario> criarLista(){
         return FXCollections.observableArrayList(
-            new Horario("Aoba", "Aoba", "Aoba", "Aoba", "Aoba","Aoba"),
-            new Horario("Aoba", "Aoba", "Aoba", "Aoba", "Aoba","Aoba"),
-            new Horario("Aoba", "Aoba", "Aoba", "Aoba", "Aoba","Aoba"),
-            new Horario("Aoba", "Aoba", "Aoba", "Aoba", "Aoba","Aoba")
-           
+            new Horario(null, "  06:20", null, "  6:20", null,"  6:20"),
+            new Horario(null, "     |", null, "     |",null, "     |"),
+            new Horario(null,   "     |", null,"     |", null,"     |"),
+            new Horario(null, "     |", null, "     |", null,"     |"),
+            new Horario(null, "  19:00", null, "  19:00", null,"  19:00")  
         );
     }
 }
